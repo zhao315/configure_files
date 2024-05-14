@@ -41,7 +41,7 @@ return  {
 		end
 	},
 
-	
+
 	-- grammer
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -87,7 +87,13 @@ return  {
 		build = "make install_jsregexp",
 		dependencies = { "rafamadriz/friendly-snippets" }
 	},
-	
 
-	
+
+    -- docker
+    {
+        "https://codeberg.org/esensar/nvim-dev-container",
+        config = function()
+            require("conf_plugins.devcontainer")
+        end
+    },
 }
