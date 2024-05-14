@@ -123,14 +123,7 @@ alias joc="jo pwd"
 
 ## autojump
 . /usr/share/autojump/autojump.sh
-
-
-
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
 
 
 # Add an "alert" alias for long running commands.  Use like so:
