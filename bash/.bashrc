@@ -122,8 +122,13 @@ alias py="python3"
 alias joc="jo pwd"
 
 ## docker
-fdocker = "docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -p 5000:5000 -it --rm  -v .:/code pytorch"
-jdocker = "docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -v .:/code -p 8888:8888 -it --rm pytorch jupyter lab --ip="0.0.0.0" --no-browser --port=8888 --allow-root"
+fdocker(){
+    docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -p 5000:5000 -it --rm  -v .:/code pytorch;
+}
+
+jdocker(){
+    docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -v .:/code -p 8888:8888 -it --rm pytorch jupyter lab --ip="0.0.0.0" --no-browser --port=8888 --allow-root
+}
 
 
 
